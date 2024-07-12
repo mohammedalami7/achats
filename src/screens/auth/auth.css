@@ -1,0 +1,443 @@
+/* ===================
+1:-SignInscreen
+==================== */
+/* SignIn.css */
+
+.signIn {
+   
+    display:flex;
+    justify-content: center;
+    
+    
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif; 
+    padding: 50px 10px;
+  }
+  
+  .signIn .img {
+    height: 650px;
+   
+  }
+  .signIn .img img{
+    height: 100%;
+    max-width: 100%;
+  }
+  .login {
+    flex-grow: 0.5;
+    text-align: left;
+    height: 650px;
+    background-color: #fff; /* Example background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example box shadow */
+   
+  }
+  
+  .login h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  .login .links{
+    display: grid;
+    row-gap: 20px;
+  }
+  .login .links .link{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    border: 1px solid rgba(170, 165, 165, 0.774);
+    padding-top: 5px;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    transition: 0.6s;
+  }
+  .login .links .link:hover{
+    border: 1px solid white;
+    transform: translateY(5px);
+  }
+  .signIn .login .or{
+    position: relative;
+    width: fit-content;
+    margin: 20px auto;
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: #007bff;
+    border-radius: 50%;
+    padding: 3px 7px;
+    color: white;
+  }
+
+  .login form {
+    margin-top: 20px;
+    text-transform: capitalize;
+    display: grid;
+    row-gap: 30px;
+  }
+  
+  .email,
+  .pass {
+    margin-bottom: 10px;
+  }
+  
+  .signIn .email label, .signIn
+  .pass label {
+    display: block;
+    margin-bottom: 5px;
+
+  }
+  .signIn .login .sign{
+    color: #ccc;
+    background-color: #000;
+    border-radius: 5px;
+    transition: 1s;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    
+  }
+  .signIn .login .sign:active{
+    transform: translateY(10px);
+  }
+ .signIn .email input, .signIn
+  .pass input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .email input:focus,
+  .pass input:focus {
+    outline: none;
+    border-color: #007bff; 
+  }
+  
+  .login h1 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .login p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .login p a {
+    color: #007bff; 
+    text-decoration: none;
+  }
+  
+  .login p a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width:800px) {
+    .signIn .img{
+       display: none;
+    }
+  
+  }
+
+  /* ===================
+2-SignUpscreen
+==================== */
+.signup {
+  display:flex;
+  justify-content: center;
+  
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif; 
+  padding: 50px 10px;
+}
+
+.signup .img {
+  height:650px;
+ 
+}
+.signup .img img{
+  height: 100%;
+  max-width: 100%;
+  
+}
+.signup .register {
+  flex-grow: 0.2;
+  text-align: left;
+  height: 650px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+.register h2 {
+  font-size: 35px;
+    margin-bottom: 20px;
+    text-transform: capitalize
+}
+
+.register p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.link:hover {
+  background-color: #f0f0f0;
+}
+
+.link img {
+  margin-right: 10px;
+}
+.email,
+.pass {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.email label,
+.pass label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.email input,
+.pass input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.email input:focus,
+.pass input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.pass p {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #666;
+}
+.termes{
+  display: flex;
+  flex-direction: column;
+}
+.terme{
+  display: flex;
+  column-gap: 15px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.termes span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  column-gap: 15px
+}
+
+.terms input {
+  margin-right: 10px;
+  display: flex;
+  ;
+}
+
+.sign {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: 1s;
+}
+
+.sign:hover {
+  transform: translateY(10px);
+}
+
+.register p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width:800px) {
+  .signup .img{
+     display: none;
+  }
+  .signup{
+    height: fit-content;
+  }
+}
+/* ==================
+3:-Resest-Screen
+===================== */
+.reset {
+  display:flex;
+  justify-content: center;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif; 
+  padding: 50px 20px;
+}
+
+.reset .img {
+  height:650px;
+}
+.reset .img img{
+  height: 100%;
+  max-width: 100%;
+}
+.reset .restart {
+  text-align: left;
+  height: 650px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+.reset .restart .head h3{
+  font-size: 30px;
+  text-transform: capitalize
+}
+.reset .restart .head p{
+  margin-top: 20px 0;
+  color: #666;
+}
+.reset .restart form{
+  margin: 20px 0;
+}
+.reset .restart form div{display: grid;row-gap: 15px;}
+.reset .restart form div label{
+  text-transform: capitalize;
+  font-size:15px;
+  color: #000;
+}
+.reset .restart form div input{
+ 
+  padding: 10px ;
+  border-radius: 5px;
+  
+}
+.reset .restart form div input:focus{
+  border: none;
+  outline:1px solid var(--color-sea-green) ;
+ 
+}
+.reset .restart form .send{
+  background-color: #000;
+  color: white;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px ;
+  text-transform: capitalize;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.reset .restart .back{
+  text-decoration: underline;
+  text-transform: capitalize;
+  color: #000;
+}
+@media (max-width:800px) {
+  .reset .img{
+    display: none;
+  }
+ 
+}
+/* =================
+4:-Change-password
+==================== */
+.changepass {
+  display:flex;
+  justify-content: center;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif; 
+  padding: 50px 20px;
+}
+.changepass .img {
+  height:650px;
+}
+.changepass .img img{
+  height: 100%;
+  max-width: 100%;
+}
+.changepass .change {
+  text-align: left;
+  height: 650px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+.changepass .change div h3{
+  font-size: 30px;
+  text-transform: capitalize
+}
+.changepass .change form{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.changepass .change form span{
+  display: grid;
+  text-transform: capitalize;
+  color: #666;
+}
+.changepass .change form input{
+  padding: 8px 5px;
+  border-radius: 5px;
+}
+.changepass .change form span input:focus{
+  border: none;
+  outline: 1px solid var(--color-sea-green);
+}
+.changepass .change form .submit{
+  background-color: #000;
+  color:white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 1s;
+}
+.changepass .change form .submit:hover{
+  transform: translateY(10px);
+}
+@media (max-width:800px) {
+  .changepass .img{
+    display: none;
+  }
+}

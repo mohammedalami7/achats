@@ -1,0 +1,173 @@
+/* ===============
+1:-Auth-header
+================= */
+.autheader{
+    display: flex;
+    justify-content: space-between;
+    padding:  10px 20px;
+    align-items: center;
+    background-color: var(--color-white);
+    
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.25);
+}
+.autheader .logo{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+   cursor: pointer;
+}
+.autheader .logo img{
+    width: 25px;
+    height: 25px;
+}
+.autheader .register {
+    display: flex;
+    column-gap: 15px;
+}
+
+.autheader .register input{
+    text-transform: capitalize;
+    font-weight: bolder;
+    padding: 7px 0;
+    font-size: 15px;
+    transition: 1s;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+.autheader .register input:first-child{
+    background-color: var( --color-sea-green-v1);
+    border: none;
+    color: white;
+}
+.autheader .register input:last-child{
+    border: none;
+}
+.autheader .register input:hover{
+    transform: scale(0.91);
+    cursor: pointer;
+}
+@media (max-width:420px) {
+    .autheader{
+        padding: 5px;
+    }
+    .autheader .logo{
+      column-gap: 0;
+    }
+    .autheader .logo h1{
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 5px;
+    }
+    .autheader .register input{
+        padding: 5px 1px;
+        width: 70px;
+        font-weight: 400;
+    }
+}
+/* =================
+2:-Header
+=================== */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding:  10px 10px;
+    align-items: center;
+    background-color: var(--color-white);
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.068);
+}
+.header .logo{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+.header .logo span{
+    font-size: 30px;
+}
+.header .logo img{
+    width: 25px;
+    height: 25px;
+}
+.header .logo .icon-menu:hover{
+    cursor: pointer;
+}
+.header .shearch{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.header .shearch ul{
+    display: flex;
+    column-gap: 15px;
+    text-transform: capitalize;
+    color: var( --color-gray);
+}
+.header .shearch ul li:hover{
+    color: #000;
+    cursor: pointer;
+}
+.header .shearch .icon-search{
+    position: relative;
+    left: 40px;
+}
+.header .shearch span{
+    display: flex;
+    align-items: center;
+}
+.header .shearch span input{
+    width: 270px;
+    padding: 10px 25px;
+    padding-left: 40px;
+    border-radius: 5px;
+    background-color: var(--color-whitesmoke);
+    border: none;
+    font-size: 15px;
+}
+.header .shearch span input:focus{
+    border: none;
+    outline: 1px solid var(--color-sea-green);
+}
+.header .user{
+    display: flex;
+   
+   font-size: 20px;
+}
+.header .user span:hover{
+   cursor: pointer;
+   background-color: var(--color-silver);
+}
+.header .user span{
+    padding: 8px;
+    border-radius: 5px;
+    color: #000;
+}
+.header .user span:active{
+    background-color: var(--color-sea-green);
+    color: rgb(255, 254, 254);
+}
+@media (max-width:930px) {
+    .header .shearch{
+        flex-grow: 1;
+    }
+    .header .shearch ul{
+        display: none;
+    }
+    .header .shearch .span{
+        width: 100%;
+    }
+    .header .shearch .span input{
+        width:95%;
+    }
+}
+@media (max-width:600px) {
+    .header .shearch {
+       display: none;
+    }
+}
+@media (max-width:500px) {
+    .header .logo h1 {
+       display: none;
+    }
+}

@@ -1,0 +1,61 @@
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-platinum: #d9d9d9;
+    --color-jet: #333333;
+    --color-yellow: #fdc419;
+    --color-yellow-green: #7ad005;
+    --color-sea-green: #10b9b0;
+    --color-sea-green-v1: #14c4b5;
+    --color-flash-white: #eef4f4;
+    --color-anti-flash-white: #edeef2;
+    --color-purple: #a149b6;
+    --color-red: #f00;
+    --color-gray: #807d7e;
+    --color-dim-gray: #6d6d6d;
+    --color-outerspace: #3c4242;
+    --color-silver: #bebcbd;
+    --color-whitesmoke: #f6f6f6;
+    --color-brown: #fb9f4c;
+    --color-black-04: rgba(0, 0, 0, 0.4);
+
+    /* default transition */
+    --default-transition: all 300ms ease-in-out;
+
+    /* font family */
+    --font-family-inter: 'Inter', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+}
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family:Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+a{
+    all: unset;
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+}
+button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  
+}
