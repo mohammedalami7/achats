@@ -90,12 +90,12 @@
 }
 
 #scroling2{
-    position: fixed;
     background-color: cadetblue;
     padding: 15px;
-    border-radius:50%;
-    bottom: 40px;
-    right: 10px;
-    z-index: 4000;
-    opacity: 0.8;
+    border-radius: 50%;
+    width: fit-content;
+    position: fixed;
+    right:30px;
+    bottom: 50px;
+    z-index:5555;
 }
